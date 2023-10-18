@@ -6,9 +6,10 @@ import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
 import Brands from '~/components/widgets/Brands.astro';
 import Steps from '~/components/widgets/Steps.astro';
+
+import profile from '../assets/images/profile.jpg'
 
 const metadata = {
   title: 'My portfolio',
@@ -46,9 +47,9 @@ const metadata = {
     actions={[{ variant: "primary", target: '_blank', text: 'Hire me', href: '/' }]}
   >
     <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree
-      from New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into
-      captivating realities.
+      I'm a passionate programmer dedicated to crafting innovative digital solutions. With 5 years of experience and a 
+      degree in Software Engineering from Stanford University, I turn ideas into functional and efficient applications, 
+      injecting vitality into the projects and brands I take on
     </Fragment>
   </Hero>
 
@@ -84,7 +85,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      src: profile,
       alt: 'Colorful Image',
     }}
   >
@@ -206,26 +207,21 @@ const metadata = {
       },
       {
         title: 'Branding and identity',
-        
       },
       {
         title: 'User-centered design',
       },
       {
-        title: 'Adobe Creative Suite',
-        
+        title: 'Adobe Creative Suite',        
       },
       {
         title: 'Typography',
-        
       },
       {
         title: 'Color theory',
-
       },
       {
         title: 'Print and digital design',
-      
       },
       {
         title: 'Attention to det'
