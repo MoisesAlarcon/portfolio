@@ -5,7 +5,6 @@ import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Features3 from '~/components/widgets/Features3.astro';
 import Brands from '~/components/widgets/Brands.astro';
 import Steps from '~/components/widgets/Steps.astro';
 
@@ -43,13 +42,12 @@ const metadata = {
   <Hero
     id="hero"
     title="Moisés Alarcón"
-    tagline="Personal Web Portfolio"
+    tagline="Young Talent"
     actions={[{ variant: "primary", target: '_blank', text: 'Hire me', href: '/' }]}
   >
     <Fragment slot="subtitle">
-      I'm a passionate programmer dedicated to crafting innovative digital solutions. With 5 years of experience and a 
-      degree in Software Engineering from Stanford University, I turn ideas into functional and efficient applications, 
-      injecting vitality into the projects and brands I take on
+      I'm passionate innovator and programmer with 3 years of hands-on experience and a Fullstack development degree 
+      from Bottega University, I adeptly transform ideas into efficient applications, revitalizing projects and brands
     </Fragment>
   </Hero>
 
@@ -60,27 +58,26 @@ const metadata = {
     columns={3}
     items={[
       {
-        icon: 'tabler:brand-dribbble',
+        icon: 'tabler:brand-linkedin',
         callToAction: {
           target: '_blank',
-          text: 'Dribbble',
-          href: '#',
+          text: 'Linkedin',
+          href: 'https://www.linkedin.com/in/mois%C3%A9s-alarc%C3%B3n-206b95212/',
         },
       },
       {
-        icon: 'tabler:brand-behance',
+        icon: 'tabler:brand-github-filled',
         callToAction: {
           target: '_blank',
-          text: 'Behance',
-          href: '#',
+          text: 'Github',
+          href: 'https://github.com/MoisesAlarcon',
         },
       },
       {
-        icon: 'tabler:brand-pinterest',
+        icon: 'tabler:brand-whatsapp',
         callToAction: {
           target: '_blank',
-          text: 'Pinterest',
-          href: '#',
+          text: '633 15 18 95',
         },
       },
     ]}
@@ -92,16 +89,19 @@ const metadata = {
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h3>
       <p>
-        Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-        pixel becomes a brushstroke in the canvas of imagination.
+        I began programming at 17 and launched my first website that year, a video game tournament page. 
+        At 18, I earned a full-stack web development scholarship from Bottega University.
       </p>
       <br />
       <p>
-        I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
-        details of typography, or the vibrant hues of nature during my outdoor escapades.
+        Due to my passion for <span class="font-extrabold text-[#1e40af]">innovation</span>, 
+        <span class="font-extrabold text-[#1e40af]">continuous learning</span>, 
+        <span class="font-extrabold text-[#1e40af]">proactiveness</span> and
+         <span class="font-extrabold text-[#1e40af]">entrepreneurial spirit</span>, I was recognized 
+        at the age of 19 in national awards such as the <span class="underline">2022 Entrepreneurship Competition</span>  I also won the 
+        <span class="underline">Hackathon Talent in Madrid</span>
+        from Demium. At 20, my startup was selected as one of the <span class="underline">Top 10 Cleantech Ideas in Spain</span>
       </p>
-      <br />
-      <p>If you're curious to dive deeper into my work, you can follow me:</p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -112,12 +112,12 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Brands
-  title="Partnerships & Collaborations"
-  subtitle="At Astrowind, we believe in the power of collaboration to drive innovation and create exceptional experiences."
+  title="Technologies"
+  subtitle="Technologies in which I have experience and knowledge"
   icons={[]}
   images={[
     {
-      src: 'https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_1280.png',
+      src: 'https://pixabay.com/es/vectors/javascript-js-logo-c%C3%B3digo-fuente-736400/',
       alt: 'Paypal',
     },
     {
@@ -128,7 +128,6 @@ const metadata = {
       src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
       alt: 'Ebay',
     },
-
     {
       src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
       alt: 'Youtube',
@@ -172,6 +171,12 @@ const metadata = {
         description: `Assisted senor designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
         icon: 'tabler:briefcase',
       },
+      {
+        title:
+          'Junior Graphic Designer <br /> <span class="font-normal">XYZ Creative Agency, Los Angeles, CA</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
+        description: `Assisted senor designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+        icon: 'tabler:briefcase',
+      },
     ]}
     classes={{ container: 'max-w-3xl' }}
   />
@@ -183,54 +188,19 @@ const metadata = {
     title="Education"
     items={[
       {
-        title: `Master of Fine Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2018 - 2020</span>`,
+        title: `Master's Degree in Fintech and Digital Financial Services <br /> <span class="font-normal">IEBS Business School</span> <br /> <span class="text-sm font-normal">2022 - 2023</span>`,
         icon: 'tabler:school',
       },
       {
-        title: `Bachelor of Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2014 - 2018</span>`,
+        title: `Full Stack Development Program <br /> <span class="font-normal">Bottega University</span> <br /> <span class="text-sm font-normal">2020 - 2021</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Full Stack Development Program <br /> <span class="font-normal">Bottega University</span> <br /> <span class="text-sm font-normal">2020 - 2021</span>`,
         icon: 'tabler:school',
       },
     ]}
     classes={{ container: 'max-w-3xl' }}
-  />
-
-  <!-- Features3 Widget ************** -->
-
-  <Features3
-    title="Skills"
-    subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
-    columns={3}
-    defaultIcon="tabler:point-filled"
-    items={[
-      {
-        title: 'Graphic design',
-      },
-      {
-        title: 'Branding and identity',
-      },
-      {
-        title: 'User-centered design',
-      },
-      {
-        title: 'Adobe Creative Suite',        
-      },
-      {
-        title: 'Typography',
-      },
-      {
-        title: 'Color theory',
-      },
-      {
-        title: 'Print and digital design',
-      },
-      {
-        title: 'Attention to det'
-      },
-      {
-        title: 'Adaptability',
-      
-      },
-    ]}
   />
 
   <!-- Content Widget **************** -->
