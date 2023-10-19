@@ -1,6 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
+import { Image } from 'astro:assets';
 import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
@@ -9,7 +9,7 @@ import Brands from '~/components/widgets/Brands.astro';
 import Steps from '~/components/widgets/Steps.astro';
 
 import profile from '../assets/images/profile.jpg'
-import cover from '../assets/images/cover.png'
+import t_0 from '../assets/images/t_0.png'
 import t_1 from '../assets/images/t_1.png'
 import t_2 from '../assets/images/t_2.png'
 import t_3 from '../assets/images/t_3.png'
@@ -129,36 +129,19 @@ const metadata = {
       src: t2,
       alt: 'Paypal',
     },
-    {
-      src:  t_2,
-      alt: 'Visa',
-    },
-    {
-      src: t_2,
-      alt: 'Ebay',
-    },
-    {
-      src: t_3,
-      alt: 'Youtube',
-    },
-    {
-      src:  t_4,
-      alt: 'Microsoft',
-    },
-    {
-      src:  t_5,
-      alt: 'Node JS',
-    },
-    {
-      src:  t_6,
-      alt: 'Google',
-    },
-    {
-      src:  t_7,
-      alt: 'Meta',
-    },
   ]}
 />
+
+<div class="flex justify-center col-span-1 my-2 lg:my-4 py-1 px-3 rounded-md dark:bg-transparent">
+  <Image src={t_0} alt="tech" class="max-h-12" />
+  <Image src={t_1} alt="tech" class="max-h-12" />
+  <Image src={t_2} alt="tech" class="max-h-12" />
+  <Image src={t_3} alt="tech" class="max-h-12" />
+  <Image src={t_4} alt="tech" class="max-h-12" />
+  <Image src={t_5} alt="tech" class="max-h-12" />
+  <Image src={t_6} alt="tech" class="max-h-12" />
+  <Image src={t_7} alt="tech" class="max-h-12" />
+</div>
 
   <Steps
     id="resume"
